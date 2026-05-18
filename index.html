@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Janam Kundali — 7 November 1989 · Karad</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --teal: #0D9488;
+  --teal-light: #14B8A6;
+  --teal-pale: #CCFBF1;
+  --teal-dim: #5EEAD4;
+  --indigo: #4F46E5;
+  --indigo-pale: #EEF2FF;
+  --indigo-mid: #818CF8;
+  --bg: #F8FAFC;
+  --bg2: #FFFFFF;
+  --bg3: #F1F5F9;
+  --bg4: #E2E8F0;
+  --border: #E2E8F0;
+  --border-strong: #CBD5E1;
+  --text: #0F172A;
+  --text-muted: #475569;
+  --text-dim: #94A3B8;
+  --green: #059669;
+  --green-pale: #ECFDF5;
+  --amber: #D97706;
+  --amber-pale: #FFFBEB;
+  --red: #DC2626;
+  --red-pale: #FEF2F2;
+  --blue: #2563EB;
+  --blue-pale: #EFF6FF;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Subtle mesh background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 40% at 20% 10%, rgba(13,148,136,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 80% 90%, rgba(79,70,229,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 30% at 60% 40%, rgba(20,184,166,0.04) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container { max-width: 880px; margin: 0 auto; padding: 0 14px 80px; position: relative; z-index: 1; }
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 36px 14px 28px;
+}
+.header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--teal-pale);
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 99px;
+  margin-bottom: 20px;
+}
+.header h1 {
+  font-family: 'Lora', serif;
+  font-size: clamp(30px, 5.5vw, 50px);
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+.header h1 span { color: var(--teal); font-style: italic; }
+.header-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.header-divider {
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--indigo));
+  border-radius: 99px;
+  margin: 20px auto;
+}
+.header-pills { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+.pill {
+  background: var(--bg2);
+  border: 1px solid var(--border-strong);
+  border-radius: 99px;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-muted);
+  box-shadow: var(--shadow);
+}
+
+/* Identity grid */
+.identity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 36px; }
+@media(max-width:600px){ .identity-grid { grid-template-columns: 1fr 1fr; } }
+.id-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+  transition: box-shadow .2s, border-color .2s;
+}
+.id-card:hover { box-shadow: var(--shadow-md); border-color: var(--teal-dim); }
+.id-card-label { font-size: 10px; letter-spacing: 1.2px; color: var(--text-dim); text-transform: uppercase; margin-bottom: 6px; }
+.id-card-value { font-family: 'Lora', serif; font-size: 18px; font-weight: 500; color: var(--teal); line-height: 1.25; }
+.id-card-sub { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+
+/* Section title */
+.sec-title {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sec-title::after { content:''; flex:1; height:1px; background: var(--border); }
+
+/* Tabs */
+.tabs-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(248,250,252,0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+  /* extend to screen edges on mobile */
+  margin-left: -14px;
+  margin-right: -14px;
+}
+.tabs {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+  padding: 0 14px;
+}
+.tabs::-webkit-scrollbar { display: none; }
+.tab-btn {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-dim);
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 13px 14px;
+  cursor: pointer;
+  transition: all .18s;
+  white-space: nowrap;
+  scroll-snap-align: start;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.tab-btn:active { opacity: 0.7; }
+.tab-btn.active { color: var(--teal); border-bottom-color: var(--teal); font-weight: 500; }
+
+.panel { display: none; animation: fadeUp .25s ease; }
+.panel.active { display: block; }
+@keyframes fadeUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
+/* Kundali */
+.kundali-wrap { display: flex; justify-content: center; margin-bottom: 28px; }
+.kundali-svg { width: 100%; max-width: 300px; }
+
+/* Planet table */
+.planet-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 24px; }
+.planet-table th { text-align: left; padding: 8px 10px; font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--text-dim); border-bottom: 1px solid var(--border); font-weight: 600; }
+.planet-table td { padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.planet-table tr:last-child td { border-bottom: none; }
+.planet-table tr:hover td { background: var(--bg3); }
+.planet-name { font-weight: 500; color: var(--text); font-size: 13px; }
+.house-num { color: var(--teal); font-weight: 600; }
+/* Scroll wrapper for tables on mobile */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: var(--radius); }
+
+/* Badge */
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 9px;
+  border-radius: 99px;
+}
+.b-good { background: var(--green-pale); color: var(--green); }
+.b-warn { background: var(--amber-pale); color: var(--amber); }
+.b-info { background: var(--blue-pale); color: var(--blue); }
+.b-teal { background: var(--teal-pale); color: var(--teal); }
+.b-neutral { background: var(--bg3); color: var(--text-muted); border: 1px solid var(--border); }
+.b-purple { background: var(--indigo-pale); color: var(--indigo); }
+
+/* Cards */
+.info-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  line-height: 1.8;
+  font-size: 14px;
+  color: var(--text-muted);
+  box-shadow: var(--shadow);
+}
+.info-card-title {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.info-card strong { color: var(--text); font-weight: 500; }
+.info-card em { color: var(--teal); font-style: italic; }
+.info-card.accent-teal { border-left: 3px solid var(--teal); }
+.info-card.accent-indigo { border-left: 3px solid var(--indigo); }
+.info-card.accent-amber { border-left: 3px solid var(--amber); }
+
+/* Yoga grid */
+.yoga-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
+@media(max-width:540px){ .yoga-grid { grid-template-columns: 1fr; } }
+.yoga-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+}
+.yoga-name { font-family: 'Lora', serif; font-size: 15px; color: var(--teal); margin-bottom: 5px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.yoga-sub { font-size: 12px; color: var(--text-muted); line-height: 1.65; }
+
+/* Dasha */
+.dasha-list { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); margin-bottom: 24px; }
+.dasha-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  gap: 10px;
+}
+.dasha-item:last-child { border-bottom: none; }
+.dasha-item.current { background: linear-gradient(90deg, var(--teal-pale), var(--bg2)); }
+.dasha-planet { font-family: 'Lora', serif; font-size: 16px; color: var(--text-muted); }
+.dasha-item.current .dasha-planet { color: var(--teal); font-weight: 500; }
+.dasha-period { font-size: 12px; color: var(--text-dim); }
+.dasha-item.current .dasha-period { color: var(--teal); }
+
+/* AD table */
+.ad-table { width:100%; border-collapse:collapse; font-size:13px; margin-bottom:20px; }
+.ad-table th { text-align:left; padding:8px 12px; font-size:10px; letter-spacing:1.2px; text-transform:uppercase; color:var(--text-dim); border-bottom:1px solid var(--border); font-weight:600; }
+.ad-table td { padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top; font-size:13px; color:var(--text-muted); }
+.ad-table tr.now td { background:var(--teal-pale); color:var(--text); }
+.ad-table tr:last-child td { border-bottom:none; }
+.ad-lord { font-weight:600; color:var(--text); white-space:nowrap; }
+.ad-period { color:var(--text-dim); font-size:12px; white-space:nowrap; }
+
+/* Timeline */
+.timeline { position:relative; padding-left:24px; margin-bottom:20px; }
+.timeline::before { content:''; position:absolute; left:7px; top:8px; bottom:8px; width:1.5px; background:var(--border-strong); border-radius:1px; }
+.tl-item { position:relative; margin-bottom:18px; }
+.tl-item::before { content:''; position:absolute; left:-20px; top:4px; width:9px; height:9px; border-radius:50%; border:2px solid var(--border-strong); background:var(--bg2); }
+.tl-item.now::before { background:var(--teal); border-color:var(--teal); box-shadow:0 0 0 3px var(--teal-pale); }
+.tl-year { font-size:12px; font-weight:600; color:var(--teal); margin-bottom:3px; }
+.tl-year.muted { color:var(--text-dim); font-weight:400; }
+.tl-desc { font-size:13px; color:var(--text-muted); line-height:1.7; }
+
+/* Stat grid */
+.stat-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px; }
+@media(max-width:480px){ .stat-grid { grid-template-columns:1fr; } }
+.stat-box { background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:12px 16px; box-shadow:var(--shadow); }
+.stat-label { font-size:10px; letter-spacing:1.2px; text-transform:uppercase; color:var(--text-dim); margin-bottom:5px; font-weight:600; }
+.stat-val { font-family:'Lora',serif; font-size:17px; color:var(--text); }
+.stat-sub { font-size:11px; color:var(--text-dim); margin-top:3px; }
+
+/* Remedy */
+.remedy-list { background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); margin-bottom:16px; }
+.remedy-item { display:flex; gap:16px; padding:16px 18px; border-bottom:1px solid var(--border); align-items:flex-start; }
+.remedy-item:last-child { border-bottom:none; }
+.remedy-dot { width:36px; height:36px; border-radius:50%; background:var(--teal-pale); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px; }
+.remedy-dot span { font-family:'Lora',serif; font-size:13px; color:var(--teal); font-weight:500; }
+.remedy-body { font-size:13px; color:var(--text-muted); line-height:1.78; }
+.remedy-body strong { color:var(--text); font-weight:500; }
+.remedy-title { font-weight:600; color:var(--text); font-size:14px; margin-bottom:4px; }
+
+/* Verdict */
+.verdict-box {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 28px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.verdict-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--indigo));
+}
+.verdict-title { font-family:'Lora',serif; font-size:24px; color:var(--text); margin-bottom:20px; }
+.verdict-item { margin-bottom:18px; padding-bottom:18px; border-bottom:1px solid var(--border); }
+.verdict-item:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
+.verdict-label { font-size:10px; font-weight:600; letter-spacing:1.8px; text-transform:uppercase; color:var(--teal); margin-bottom:6px; }
+.verdict-text { font-size:14px; color:var(--text-muted); line-height:1.8; }
+.verdict-text strong { color:var(--text); font-weight:500; }
+
+/* Summary table */
+.sum-table { width:100%; font-size:13px; border-collapse:collapse; background:var(--bg2); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); }
+.sum-table td { padding:10px 14px; border-bottom:1px solid var(--border); vertical-align:top; }
+.sum-table tr:last-child td { border-bottom:none; }
+.sum-table td:first-child { color:var(--text-dim); width:170px; font-size:12px; font-weight:500; letter-spacing:0.2px; background:var(--bg3); }
+.sum-table td:last-child { color:var(--text); font-weight:500; }
+
+/* Navamsa table */
+.nav-table { width:100%; border-collapse:collapse; font-size:13px; margin-bottom:16px; }
+.nav-table th { text-align:left; padding:8px 12px; font-size:10px; letter-spacing:1.2px; text-transform:uppercase; color:var(--text-dim); border-bottom:1px solid var(--border); font-weight:600; }
+.nav-table td { padding:9px 12px; border-bottom:1px solid var(--border); color:var(--text-muted); }
+.nav-table tr:last-child td { border-bottom:none; }
+
+/* Sade Sati clear box */
+.ss-clear { background:var(--green-pale); border:1px solid rgba(5,150,105,0.2); border-radius:var(--radius); padding:16px 18px; display:flex; gap:14px; align-items:center; margin-bottom:16px; }
+.ss-icon { font-size:26px; flex-shrink:0; }
+.ss-title { font-size:16px; font-weight:500; color:var(--green); font-family:'Lora',serif; }
+.ss-sub { font-size:13px; color:var(--green); opacity:.8; margin-top:3px; }
+
+/* Footer */
+.footer { text-align:center; margin-top:40px; padding-top:24px; border-top:1px solid var(--border); }
+.footer-om { font-family:'Lora',serif; font-size:24px; color:var(--teal); margin-bottom:8px; }
+.footer-note { font-size:11px; color:var(--text-dim); line-height:1.8; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width:4px; }
+::-webkit-scrollbar-track { background:var(--bg); }
+::-webkit-scrollbar-thumb { background:var(--teal-dim); border-radius:2px; }
+
+@media(max-width:600px){
+  .header h1 { font-size: 26px; }
+  .header { padding: 32px 12px 24px; }
+  .identity-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .verdict-box { padding: 18px 16px; }
+  .verdict-title { font-size: 20px; }
+  .verdict-text { font-size: 13px; }
+  .info-card { padding: 13px 13px; font-size: 13px; }
+  .info-card-title { font-size: 15px; }
+  .stat-box { padding: 10px 12px; }
+  .stat-val { font-size: 15px; }
+  .yoga-grid { grid-template-columns: 1fr; }
+  .yoga-sub { font-size: 12px; }
+  .dasha-item { padding: 10px 12px; flex-wrap: wrap; gap: 6px; }
+  .dasha-planet { font-size: 15px; }
+  .tl-desc { font-size: 12px; }
+  .remedy-item { padding: 12px 12px; gap: 10px; }
+  .remedy-body { font-size: 12px; }
+  .remedy-title { font-size: 13px; }
+  .remedy-dot { width: 30px; height: 30px; }
+  .kundali-svg { max-width: 270px; }
+  .sec-title { font-size: 9px; letter-spacing: 1.5px; }
+  .ad-table th, .ad-table td { padding: 7px 8px; font-size: 12px; }
+  .nav-table th, .nav-table td { padding: 7px 8px; font-size: 12px; }
+  .sum-table td { padding: 8px 10px; font-size: 12px; }
+  .sum-table td:first-child { width: 110px; font-size: 11px; }
+  .ss-title { font-size: 15px; }
+  .footer-om { font-size: 20px; }
+}
+@media(max-width:400px){
+  .header h1 { font-size: 22px; }
+  .stat-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .tab-btn { padding: 11px 10px; font-size: 12px; }
+  .id-card-value { font-size: 15px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-badge">ॐ · Vedic Jyotish Reading</div>
+  <h1>Janam <span>Kundali</span></h1>
+  <div class="header-sub">7 November 1989 · 10:35 AM IST · Karad, Maharashtra</div>
+  <div class="header-sub" style="font-size:12px;color:var(--text-dim);">17.26°N, 74.18°E · Lahiri Ayanamsha · Vimshottari Dasha System</div>
+  <div class="header-divider"></div>
+  <div class="header-pills">
+    <span class="pill">Dhanu Lagna</span>
+    <span class="pill">Tula Moon</span>
+    <span class="pill">Jyeshtha Nakshatra</span>
+    <span class="pill">Shukra Mahadasha</span>
+  </div>
+</div>
+
+<!-- IDENTITY GRID -->
+<div class="identity-grid">
+  <div class="id-card"><div class="id-card-label">Lagna (Ascendant)</div><div class="id-card-value">Dhanu · Sagittarius</div><div class="id-card-sub">Ruled by Guru (Jupiter)</div></div>
+  <div class="id-card"><div class="id-card-label">Janma Rashi</div><div class="id-card-value">Vrischika · Scorpio</div><div class="id-card-sub">Ruled by Mangal (Mars)</div></div>
+  <div class="id-card"><div class="id-card-label">Surya Rashi</div><div class="id-card-value">Tula · Libra</div><div class="id-card-sub">Sun + Moon in same sign</div></div>
+  <div class="id-card"><div class="id-card-label">Janma Nakshatra</div><div class="id-card-value">Jyeshtha</div><div class="id-card-sub">Pada 1 · Indra Devata</div></div>
+  <div class="id-card"><div class="id-card-label">Nakshatra Lord</div><div class="id-card-value">Budha (Mercury)</div><div class="id-card-sub">Sharp, intense, transformative</div></div>
+  <div class="id-card"><div class="id-card-label">Gana / Varna / Nadi</div><div class="id-card-value">Rakshasa</div><div class="id-card-sub">Brahmin varna · Antya Nadi</div></div>
+</div>
+
+<!-- TABS -->
+<div class="tabs-wrap">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="show('chart')">Chart</button>
+    <button class="tab-btn" onclick="show('personality')">Personality</button>
+    <button class="tab-btn" onclick="show('career')">Career</button>
+    <button class="tab-btn" onclick="show('finance')">Finance</button>
+    <button class="tab-btn" onclick="show('marriage')">Marriage</button>
+    <button class="tab-btn" onclick="show('children')">Children</button>
+    <button class="tab-btn" onclick="show('health')">Health</button>
+    <button class="tab-btn" onclick="show('foreign')">Foreign</button>
+    <button class="tab-btn" onclick="show('spiritual')">Spiritual</button>
+    <button class="tab-btn" onclick="show('dasha')">Dasha</button>
+    <button class="tab-btn" onclick="show('navamsa')">Navamsa D9</button>
+    <button class="tab-btn" onclick="show('transits')">Transits 2026</button>
+    <button class="tab-btn" onclick="show('sadesati')">Sade Sati</button>
+    <button class="tab-btn" onclick="show('remedies')">Remedies</button>
+    <button class="tab-btn" onclick="show('verdict')">Final Verdict</button>
+  </div>
+</div>
+
+<!-- PANEL: CHART -->
+<div id="panel-chart" class="panel active">
+  <div class="sec-title">Lagna Kundali — North Indian Style</div>
+  <div class="kundali-wrap">
+    <svg class="kundali-svg" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="10" width="300" height="300" fill="white" stroke="#CBD5E1" stroke-width="1.5" rx="4"/>
+      <polygon points="160,10 310,160 160,310 10,160" fill="none" stroke="#CBD5E1" stroke-width="1.5"/>
+      <line x1="10" y1="10" x2="160" y2="160" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="310" y1="10" x2="160" y2="160" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="10" y1="310" x2="160" y2="160" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="310" y1="310" x2="160" y2="160" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="160" y="44" text-anchor="middle" font-size="11" font-family="Outfit" fill="#0D9488" font-weight="600">1 · Dhanu (Lag)</text>
+      <text x="160" y="58" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">—</text>
+      <text x="248" y="97" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">2 · Mak</text>
+      <text x="248" y="110" text-anchor="middle" font-size="10" font-family="Outfit" fill="#475569">—</text>
+      <text x="272" y="152" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">3 · Kum</text>
+      <text x="272" y="165" text-anchor="middle" font-size="10" font-family="Outfit" fill="#475569">—</text>
+      <text x="248" y="212" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">4 · Mee</text>
+      <text x="248" y="225" text-anchor="middle" font-size="10" font-family="Outfit" fill="#475569">—</text>
+      <text x="160" y="258" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">5 · Meṣ</text>
+      <text x="160" y="271" text-anchor="middle" font-size="10" font-family="Outfit" fill="#475569">—</text>
+      <text x="72" y="225" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">6 · Vṛ</text>
+      <text x="72" y="238" text-anchor="middle" font-size="10" font-family="Outfit" fill="#475569">—</text>
+      <text x="47" y="152" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">7 · Mit</text>
+      <text x="47" y="165" text-anchor="middle" font-size="10" font-family="Outfit" fill="#475569">—</text>
+      <text x="72" y="109" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">8 · Kar</text>
+      <text x="72" y="122" text-anchor="middle" font-size="10" font-family="Outfit" fill="#2563EB" font-weight="500">Ju Ra</text>
+      <text x="160" y="122" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">9 · Sim</text>
+      <text x="160" y="135" text-anchor="middle" font-size="10" font-family="Outfit" fill="#475569">Ke</text>
+      <text x="196" y="162" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">10 · Kan</text>
+      <text x="196" y="175" text-anchor="middle" font-size="10" font-family="Outfit" fill="#DC2626" font-weight="500">Ma</text>
+      <text x="160" y="190" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">11 · Tul</text>
+      <text x="160" y="203" text-anchor="middle" font-size="10" font-family="Outfit" fill="#0D9488" font-weight="600">Su Me Ve</text>
+      <text x="122" y="162" text-anchor="middle" font-size="10" font-family="Outfit" fill="#94A3B8">12 · Vṛś</text>
+      <text x="122" y="175" text-anchor="middle" font-size="10" font-family="Outfit" fill="#475569">Sa Mo</text>
+    </svg>
+  </div>
+
+  <div class="sec-title">Graha Sthiti — Planetary Positions</div>
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:24px;">
+    <table class="planet-table" style="min-width:480px;">
+      <thead><tr><th>Graha</th><th>Rashi</th><th>Degree</th><th>Bhava</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td class="planet-name">Surya (Sun)</td><td style="color:var(--text-muted)">Tula (Libra)</td><td style="color:var(--text-dim)">~20°55'</td><td class="house-num">H11</td><td><span class="badge b-warn">Neecha</span></td></tr>
+        <tr><td class="planet-name">Chandra (Moon)</td><td style="color:var(--text-muted)">Vrischika (Scorpio)</td><td style="color:var(--text-dim)">~14°20'</td><td class="house-num">H12</td><td><span class="badge b-warn">12th house</span></td></tr>
+        <tr><td class="planet-name">Mangal (Mars)</td><td style="color:var(--text-muted)">Kanya (Virgo)</td><td style="color:var(--text-dim)">~27°40'</td><td class="house-num">H10</td><td><span class="badge b-info">Karma Bhava</span></td></tr>
+        <tr><td class="planet-name">Budha (Mercury)</td><td style="color:var(--text-muted)">Tula (Libra)</td><td style="color:var(--text-dim)">~14°20'</td><td class="house-num">H11</td><td><span class="badge b-good">Friendly sign</span></td></tr>
+        <tr><td class="planet-name">Guru (Jupiter)</td><td style="color:var(--text-muted)">Karka (Cancer)</td><td style="color:var(--text-dim)">~17°10'</td><td class="house-num">H8</td><td><span class="badge b-teal">Uccha (Exalted)</span></td></tr>
+        <tr><td class="planet-name">Shukra (Venus)</td><td style="color:var(--text-muted)">Tula (Libra)</td><td style="color:var(--text-dim)">~28°50'</td><td class="house-num">H11</td><td><span class="badge b-teal">Own sign — Strong</span></td></tr>
+        <tr><td class="planet-name">Shani (Saturn)</td><td style="color:var(--text-muted)">Vrischika (Scorpio)</td><td style="color:var(--text-dim)">~24°05'</td><td class="house-num">H12</td><td><span class="badge b-warn">Difficult</span></td></tr>
+        <tr><td class="planet-name">Rahu</td><td style="color:var(--text-muted)">Karka (Cancer)</td><td style="color:var(--text-dim)">~26°18'</td><td class="house-num">H8</td><td><span class="badge b-warn">8th — Intense</span></td></tr>
+        <tr><td class="planet-name">Ketu</td><td style="color:var(--text-muted)">Makara → Simha</td><td style="color:var(--text-dim)">~26°18'</td><td class="house-num">H9</td><td><span class="badge b-info">Dharma Ketu</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec-title">Key Yogas</div>
+  <div class="yoga-grid">
+    <div class="yoga-card"><div class="yoga-name">Malavya Yoga <span class="badge b-purple">Pancha Mahapurusha</span></div><div class="yoga-sub">Venus in own sign (Tula) in 11th house — beauty, prosperity, social eminence, artistic excellence. One of the rarest and most powerful yogas.</div></div>
+    <div class="yoga-card"><div class="yoga-name">Uccha Guru</div><div class="yoga-sub">Jupiter exalted in Cancer (H8) — exceptional wisdom, longevity, hidden wealth, and transformation that elevates. Deep research and spiritual power.</div></div>
+    <div class="yoga-card"><div class="yoga-name">4-Planet Labha Cluster</div><div class="yoga-sub">Sun, Moon, Mercury, Venus all in 11th house (Tula) — gains from multiple sources, vast social networks, income through relationships and intellect.</div></div>
+    <div class="yoga-card"><div class="yoga-name">Viparita Raja Yoga (partial)</div><div class="yoga-sub">Exalted Jupiter in 8th house — lord of Dharma in the house of transformation. Hardships convert to extraordinary strength over time.</div></div>
+    <div class="yoga-card"><div class="yoga-name">Mars in 10th (Ruchaka partial)</div><div class="yoga-sub">Mars in Karma Bhava — driven, ambitious, competitive career nature. Leadership in analytical or action-oriented professions.</div></div>
+    <div class="yoga-card"><div class="yoga-name">Ketu in 9th (Dharma)</div><div class="yoga-sub">Past-life spiritual merit carried forward. Natural intuitive wisdom. Philosophical depth without formal instruction. Moksha inclination.</div></div>
+  </div>
+</div>
+
+<!-- PANEL: PERSONALITY -->
+<div id="panel-personality" class="panel">
+  <div class="sec-title">Personality &amp; Soul Nature</div>
+  <div class="info-card accent-teal"><div class="info-card-title">Dhanu Lagna — The Seeker-Leader</div>Dhanu (Sagittarius) Lagna, ruled by Jupiter, gives a personality that is expansive, truth-seeking, idealistic, and deeply philosophical. You carry a natural sense of purpose — as if you know you are here for something significant. This is not arrogance; it is a Jupiter-Lagna quality that drives you toward meaning, not just comfort. You are drawn to big ideas, large goals, and genuine wisdom. Small talk bores you. Depth energises you.</div>
+  <div class="info-card accent-teal"><div class="info-card-title">Jyeshtha Nakshatra — The Star of the Chief</div>Jyeshtha (Indra devata — king of the gods) is the nakshatra of <em>the eldest, the chief, the protector</em>. Jyeshtha means "eldest" or "most senior" — and this nakshatra carries the energy of earned authority and natural leadership. Natives of Jyeshtha are fiercely protective, intensely ambitious, and carry a quality of quiet power that others sense immediately. You do not need to announce yourself — your presence is felt. This is the nakshatra of the self-made, the resilient, and the deeply purposeful.</div>
+  <div class="info-card accent-indigo"><div class="info-card-title">Rakshasa Gana — Intensity Beneath the Surface</div>Rakshasa Gana does not mean negative — it means <strong>fierce, independent, boundary-breaking, and non-conformist</strong>. You operate by your own internal code. You respect rules you understand and challenge those you don't. This gana gives tremendous power to transform environments — but can create friction with those who expect conformity. Paired with Dhanu Lagna, it makes you someone who is genuinely difficult to categorise — and that is your strength, not a liability.</div>
+  <div class="info-card accent-indigo"><div class="info-card-title">4 Planets in 11th House — The Social Powerhouse</div>Having your Moon, Venus, Mercury, and Sun all in the 11th house makes you magnetically social — you draw people naturally. You are most alive in group settings, intellectual discussions, and environments that reward charm and communication. Venus in own sign here makes you aesthetically sensitive — beautiful things matter to you. You likely have an eye for design, art, music, or refined environments. The 11th house also governs large networks, elder siblings, and ambitions — all of these will be significant themes in your life.</div>
+</div>
+
+<!-- PANEL: CAREER -->
+<div id="panel-career" class="panel">
+  <div class="sec-title">Career &amp; Profession</div>
+  <div class="stat-grid">
+    <div class="stat-box"><div class="stat-label">10th Lord (Karma)</div><div class="stat-val">Budha (Mercury)</div><div class="stat-sub">Mercury in 11th — career through networks</div></div>
+    <div class="stat-box"><div class="stat-label">10th House Occupant</div><div class="stat-val">Mangal (Mars)</div><div class="stat-sub">Drive, ambition, competitive edge</div></div>
+    <div class="stat-box"><div class="stat-label">Lagna Lord</div><div class="stat-val">Guru (Jupiter)</div><div class="stat-sub">Exalted in 8th — hidden depth, research</div></div>
+    <div class="stat-box"><div class="stat-label">Atmakaraka</div><div class="stat-val">Venus (highest deg)</div><div class="stat-sub">Soul purpose: beauty, relationships, harmony</div></div>
+  </div>
+  <div class="info-card accent-teal"><div class="info-card-title">Natural Career Fields</div><strong>Mars in 10th (Kanya)</strong> gives precision, analytical ability, and relentless work ethic in the career. Combined with <strong>Mercury ruling the 10th</strong> and sitting in the 11th, your career thrives through intellectual skills and social networks simultaneously.<br><br><strong>Ideal fields:</strong> Technology, engineering, law, medicine, analytical consulting, data science, financial analysis, management, administration, architecture, or any role requiring both precision and communication.<br><br><strong>Secondary fields:</strong> Arts, media, creative industries (Venus + Moon in 11th give aesthetic sensibility and social capital — careers in design, film, music, fashion, or advertising are also well-supported).<br><br><strong>Leadership style:</strong> You lead through competence and inspiration, not authority alone. People follow you because you know your field deeply and articulate it clearly.</div>
+  <div class="info-card accent-indigo"><div class="info-card-title">Shukra Mahadasha Career Impact (2013–2033)</div>Venus rules your Lagna (Dhanu) and governs the 11th house cluster of 4 planets. For Dhanu Lagna, Venus Mahadasha with Malavya Yoga active is an exceptionally powerful career period. Key windows:<br><br><strong>Now — Shukra/Guru AD (2023–2026):</strong> Jupiter as Lagna lord operating within Venus MD. Peak recognition, fortune, and opportunity. Career breakthroughs and meaningful partnerships.<br><br><strong>2026–2029 (Shukra/Shani AD):</strong> Sustained disciplined effort converts to income and senior recognition. Scale up what was started in the Guru AD.<br><br><strong>2029–2033:</strong> Mercury and Ketu antardashas — intellectual consolidation and spiritual depth. Legacy work and expertise authority peak.</div>
+  <div class="sec-title">Career Timeline</div>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-year muted">2006–2013 · Ketu Mahadasha</div><div class="tl-desc">7 years of Ketu — a period of detachment, searching, and soul-level questioning. Career may have felt directionless or spiritually unfulfilling despite external progress.</div></div>
+    <div class="tl-item now"><div class="tl-year">Now · 2025 — Shukra MD peak (Shukra/Guru AD)</div><div class="tl-desc">You are in the most auspicious sub-period of your current Mahadasha. Jupiter as Lagna lord is running as Antardasha within Venus MD — fortune, recognition, and meaningful opportunities are at their highest right now. Act with full commitment.</div></div>
+    <div class="tl-item"><div class="tl-year">2026–2029 · Shukra MD / Shani AD</div><div class="tl-desc">Saturn antardasha within Venus MD — disciplined effort converts to sustained income and recognition. Hard work in this phase builds what lasts through the 2030s. Senior roles, institutional recognition, or business scale-up.</div></div>
+    <div class="tl-item"><div class="tl-year">2033–2039 · Surya Mahadasha</div><div class="tl-desc">Sun Mahadasha — authority, government, and institutional recognition peak. Leadership roles, public visibility, and the fruits of all Shukra MD work become visible.</div></div>
+  </div>
+</div>
+
+<!-- PANEL: FINANCE -->
+<div id="panel-finance" class="panel">
+  <div class="sec-title">Finance &amp; Wealth</div>
+  <div class="stat-grid">
+    <div class="stat-box"><div class="stat-label">2nd Lord (Wealth)</div><div class="stat-val">Shani (Saturn)</div><div class="stat-sub">Saturn in 12th — delayed but deep wealth</div></div>
+    <div class="stat-box"><div class="stat-label">11th House (Gains)</div><div class="stat-val">4 planets in Tula</div><div class="stat-sub">Extraordinary Labha Bhava activation</div></div>
+    <div class="stat-box"><div class="stat-label">Dhana Yoga</div><div class="stat-val">Malavya Yoga</div><div class="stat-sub">Venus own sign in 11th — sustained prosperity</div></div>
+    <div class="stat-box"><div class="stat-label">Peak Wealth Window</div><div class="stat-val">2025–2033</div><div class="stat-sub">Shukra MD peak — Guru + Shani + Budha ADs</div></div>
+  </div>
+  <div class="info-card accent-amber"><div class="info-card-title">Early Financial Pattern (Pre-2013)</div>Saturn as 2nd lord placed in the 12th house is the classical indicator of money flowing outward — expenditure, hidden costs, or investing in paths that don't immediately return. The Ketu Mahadasha (2006–2013) was a period of financial uncertainty and searching. The Shukra Mahadasha opened in 2013 and has been steadily improving finances through social capital and Venus-ruled prosperity.</div>
+  <div class="info-card accent-teal"><div class="info-card-title">The Wealth Shift — Now Onwards</div>The combination that makes this chart exceptional for wealth:<br><br><strong>1. Malavya Yoga</strong> — Venus in own sign in 11th is the gold standard for prosperity through social engagement.<br><br><strong>2. Four planets in 11th</strong> — multiple income streams indicated. Gains from profession, partnerships, investments, and networks all active within Shukra Mahadasha.<br><br><strong>3. Exalted Jupiter in 8th</strong> — hidden wealth, possible inheritance or unexpected windfalls, long-term compounding of assets.<br><br><strong>Financial peak: 2025–2033.</strong> Begin structured investment from now — mutual funds, equity SIPs, or real estate — so the compound effect peaks when the dasha window opens fully.</div>
+  <div class="info-card accent-indigo"><div class="info-card-title">Wealth Sources</div>Primary: Profession and intellectual expertise (Mercury + Mars ruling career).<br>Secondary: Partnerships and collaborations (7th lord Mercury in 11th — partners bring financial gains).<br>Tertiary: Hidden or joint assets, spouse's income, or investment windfalls (Jupiter exalted in 8th).<br><br><strong>Avoid:</strong> Saturn in 12th warns against over-lending, guaranteeing others' debts, or impulsive spending beyond current means. Wealth in this chart is built, not found.</div>
+</div>
+
+<!-- PANEL: MARRIAGE -->
+<div id="panel-marriage" class="panel">
+  <div class="sec-title">Marriage &amp; Relationships</div>
+  <div class="stat-grid">
+    <div class="stat-box"><div class="stat-label">7th House</div><div class="stat-val">Mithuna (Gemini)</div><div class="stat-sub">Ruled by Mercury — intellectual partner</div></div>
+    <div class="stat-box"><div class="stat-label">7th Lord</div><div class="stat-val">Budha (Mercury)</div><div class="stat-sub">Mercury in 11th — spouse brings gains</div></div>
+    <div class="stat-box"><div class="stat-label">Kalatra Karaka</div><div class="stat-val">Shukra (Venus)</div><div class="stat-sub">Venus own sign in 11th — very strong</div></div>
+    <div class="stat-box"><div class="stat-label">Upapada Lagna</div><div class="stat-val">Karka (Cancer)</div><div class="stat-sub">Nurturing, emotional, home-oriented spouse</div></div>
+  </div>
+  <div class="info-card accent-teal"><div class="info-card-title">Spouse Profile</div>The 7th house in Mithuna (Gemini) indicates a spouse who is <strong>witty, communicative, intellectually curious, adaptable, and socially engaging</strong>. Mercury as 7th lord in the 11th suggests the partner is likely well-networked, possibly from a similar professional or social circle, and brings tangible gains into the marriage — financial, social, or professional.<br><br>The Upapada Lagna in Cancer points to a spouse who is emotionally nurturing, family-oriented, possibly creative or home-loving, and values security. Venus (Kalatra Karaka) in own sign in the 11th is one of the strongest possible positions for marital happiness — the marriage will be a source of joy, social vitality, and mutual prosperity.</div>
+  <div class="info-card accent-indigo"><div class="info-card-title">Marriage Timing</div><strong>Prime marriage window: Shukra MD / Guru AD — RIGHT NOW (2023–2026).</strong><br><br>Jupiter antardasha within Venus Mahadasha activates the Lagna lord (Jupiter) and the marriage Karaka (Venus) simultaneously. For Dhanu Lagna, this is the single most powerful marriage yoga sub-period possible. The window is open right now and closes in 2026.<br><br>Secondary window: <strong>Shukra MD / Budha AD (2029–2031)</strong> — Mercury activates both the 7th and 10th house for Dhanu Lagna, bringing career and relationship opportunities together.</div>
+  <div class="sec-title">Relationship Timeline</div>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-year muted">2006–2013 · Ketu MD</div><div class="tl-desc">Ketu's influence: detachment, searching, spiritually-tinged relationships that may not have lasted. A period of discovering what you truly need from a partner.</div></div>
+    <div class="tl-item now"><div class="tl-year">Now · 2025 — Shukra MD / Guru AD (prime)</div><div class="tl-desc">Jupiter antardasha within Venus MD — the highest marriage yoga activation possible for this chart. Meetings through auspicious social events, family introductions, or professional networks. The right person is in proximity right now.</div></div>
+    <div class="tl-item"><div class="tl-year">2026–2029 · Shukra MD / Shani AD ← Prime window</div><div class="tl-desc">Venus fully activated. Marriage yoga at peak. Most likely window for formal union or deepest relationship commitment. Social life is richest during this period.</div></div>
+    <div class="tl-item"><div class="tl-year">2031 onwards · Domestic happiness deepens</div><div class="tl-desc">Post-marriage stabilisation. Family life, shared goals, and prosperity through partnership all develop sustainably.</div></div>
+  </div>
+</div>
+
+<!-- PANEL: CHILDREN -->
+<div id="panel-children" class="panel">
+  <div class="sec-title">Children — Putra Bhava</div>
+  <div class="stat-grid">
+    <div class="stat-box"><div class="stat-label">5th House</div><div class="stat-val">Mesha (Aries)</div><div class="stat-sub">Ruled by Mangal (Mars)</div></div>
+    <div class="stat-box"><div class="stat-label">5th Lord</div><div class="stat-val">Mangal (Mars)</div><div class="stat-sub">Mars in 10th — strong but delayed focus</div></div>
+    <div class="stat-box"><div class="stat-label">Putra Karaka</div><div class="stat-val">Guru (Jupiter)</div><div class="stat-sub">Exalted in 8th — powerful but transformative</div></div>
+    <div class="stat-box"><div class="stat-label">5th House Occupants</div><div class="stat-val">Empty</div><div class="stat-sub">Look to 5th lord and Putra Karaka</div></div>
+  </div>
+  <div class="info-card accent-teal"><div class="info-card-title">Children Yoga Assessment</div><strong>Mars as 5th lord in the 10th house</strong> is broadly positive — Mars is strong and well-placed in the Karma Bhava. This indicates children come as a result of established career and social stability — after life feels purposeful and grounded. Timing is therefore mid-to-late 30s.<br><br><strong>Jupiter (Putra Karaka) exalted in Cancer</strong> is an exceptionally strong indicator for children. Exalted Jupiter as Putra Karaka is one of the most auspicious signs for parenthood in classical Jyotish. However, Jupiter in the 8th house means the path to children may involve some waiting, transformation, or an unexpected journey before arrival — the child, when born, will be extraordinary.<br><br>Classical texts suggest <strong>1–2 children</strong> for this chart. The first child is likely to be intelligent, strong-willed, and possibly career-oriented from a young age.</div>
+  <div class="info-card accent-indigo"><div class="info-card-title">Timing for Children</div><strong>Most favourable: Shukra MD / Shani AD (2026–2029)</strong> — Saturn antardasha within Venus MD — career stability and family life align. The settled professional environment is the right context for parenthood to emerge.<br><br>Secondary: <strong>Shukra MD / Budha AD (2029–2031)</strong> — Mercury activating the 7th and 10th alongside Venus energy supports family formation.</div>
+</div>
+
+<!-- PANEL: HEALTH -->
+<div id="panel-health" class="panel">
+  <div class="sec-title">Health &amp; Vitality</div>
+  <div class="stat-grid">
+    <div class="stat-box"><div class="stat-label">Lagna Sign</div><div class="stat-val">Dhanu (Sagittarius)</div><div class="stat-sub">Rules hips, thighs, liver, sciatic nerve</div></div>
+    <div class="stat-box"><div class="stat-label">6th Lord (Disease)</div><div class="stat-val">Shukra (Venus)</div><div class="stat-sub">Venus in 11th — mild, manageable ailments</div></div>
+    <div class="stat-box"><div class="stat-label">8th House (Longevity)</div><div class="stat-val">Karka — Jupiter exalted</div><div class="stat-sub">Exalted Jupiter in 8th = strong longevity</div></div>
+    <div class="stat-box"><div class="stat-label">Overall Constitution</div><div class="stat-val">Strong</div><div class="stat-sub">Exalted Jupiter in longevity house is excellent</div></div>
+  </div>
+  <div class="info-card accent-amber"><div class="info-card-title">Primary Health Watch Areas</div><strong>Hips, Thighs &amp; Sciatic Nerve:</strong> Dhanu Lagna classically governs the lower body — hips, thighs, and the sciatic nerve. A sedentary lifestyle or prolonged sitting can create problems here. Regular physical activity, especially yoga, walking, or cycling, is strongly recommended.<br><br><strong>Liver &amp; Metabolic Health:</strong> Jupiter rules Dhanu Lagna and governs the liver. Exalted Jupiter in the 8th is good for longevity but can indicate a tendency toward liver or metabolic issues if lifestyle is indulgent — excess food, alcohol, or medication. Annual liver panel check-ups are advisable.<br><br><strong>Kidney &amp; Hormonal (Venus in 11th):</strong> Venus as 6th lord in the 11th in Tula — Tula governs kidneys. Venus ruling disease and placed in its own sign actually mitigates illness significantly, but kidney health and hormonal balance deserve monitoring, especially in Venus antardasha (2028–2031).</div>
+  <div class="info-card accent-indigo"><div class="info-card-title">Mental Health</div>Saturn in the 12th in Scorpio creates a tendency toward isolation, rumination, and carrying unexpressed burdens silently. There may be periods of withdrawal or hidden anxiety not visible externally. The remedy is consistent physical exercise, a trusted confidant, and structured routine. Jupiter's exaltation in the 8th gives deep psychological resilience — you endure what breaks others — but do not use this as an excuse to not seek support when needed.</div>
+  <div class="info-card accent-teal"><div class="info-card-title">Longevity Indicator</div><strong>Exalted Jupiter in the 8th house is one of the most powerful longevity indicators in classical Jyotish.</strong> The 8th house governs lifespan, and having the most benefic planet in its highest strength here is a very auspicious sign. No malefic planet occupies the 8th other than Rahu — which is alongside exalted Jupiter, whose power mitigates Rahu's negative effects here. Overall constitution: strong. Life expectancy indicator: above average.</div>
+</div>
+
+<!-- PANEL: FOREIGN -->
+<div id="panel-foreign" class="panel">
+  <div class="sec-title">Foreign Travel &amp; Settlement</div>
+  <div class="stat-grid">
+    <div class="stat-box"><div class="stat-label">12th House</div><div class="stat-val">Vrischika (Scorpio)</div><div class="stat-sub">Saturn in 12th — foreign discipline</div></div>
+    <div class="stat-box"><div class="stat-label">12th Lord</div><div class="stat-val">Mangal (Mars)</div><div class="stat-sub">Mars in 10th — foreign career link</div></div>
+    <div class="stat-box"><div class="stat-label">Rahu Placement</div><div class="stat-val">H8 in Karka</div><div class="stat-sub">Hidden foreign opportunities</div></div>
+    <div class="stat-box"><div class="stat-label">Foreign Indicator</div><div class="stat-val">Saturn in 12th</div><div class="stat-sub">Long foreign stays, foreign work success</div></div>
+  </div>
+  <div class="info-card accent-teal"><div class="info-card-title">Foreign Indicators in This Chart</div><strong>Saturn in the 12th house</strong> is a classical Pravasa Yoga — indicating time spent away from the birthplace, in foreign lands, or in distant locations. Saturn here gives success in foreign countries through disciplined, sustained effort. Many natives with this placement find that foreign environments suit them better than their hometown.<br><br><strong>Mars (12th lord) in the 10th house</strong> directly links foreign travel to career — professional assignments, international postings, or business travel are likely pathways to foreign exposure.<br><br><strong>Rahu in the 8th in Cancer</strong> adds a hidden, transformative quality to foreign experience — trips or relocations that begin for one reason often transform into something much deeper.</div>
+  <div class="info-card accent-indigo"><div class="info-card-title">Settlement vs Travel</div>This chart suggests <strong>significant foreign travel and extended stays abroad</strong> rather than necessarily permanent settlement. Saturn in the 12th works best when the native maintains a home base but operates internationally.<br><br><strong>Best window for foreign opportunity: Shukra MD / Rahu AD (approx. 2020–2023) has already passed</strong> as a peak. The next foreign opportunity window is <strong>Shukra MD / Budha AD (2029–2031)</strong> — Mercury-ruled travels and international intellectual work. Also watch Surya MD (2033–2039) for government or institutional international opportunities.</div>
+</div>
+
+<!-- PANEL: SPIRITUAL -->
+<div id="panel-spiritual" class="panel">
+  <div class="sec-title">Spiritual Path</div>
+  <div class="info-card accent-teal"><div class="info-card-title">Jyeshtha Nakshatra — Indra Devata</div>Jyeshtha's presiding deity is Indra — the sovereign king of the gods. This nakshatra is associated with <em>earned authority, protection of the weak, and the burden of leadership</em>. Your spiritual path is that of the protector — you are drawn to serve, lead, and take responsibility for others. The shadow side is pride and the fear of losing status. True spiritual growth for Jyeshtha natives comes through learning to lead without controlling, and to protect without possessing.</div>
+  <div class="info-card accent-indigo"><div class="info-card-title">Ketu in 9th House — Dharma Ketu</div>Ketu in the 9th house (Dharma Bhava) in Simha (Leo) indicates <strong>accumulated merit from past lives in the domain of dharma, teaching, and spiritual practice</strong>. You carry an innate spiritual understanding that does not need to be taught — it surfaces as intuition, philosophical insight, and moments of clear knowing. You may find organised religion insufficient — your spiritual path tends to be more direct, personal, and internally driven.<br><br>Ketu in Leo in the 9th also suggests a disconnect from a specific guru or father figure — you are your own teacher in the deepest sense.</div>
+  <div class="info-card accent-teal"><div class="info-card-title">Exalted Jupiter — The Inner Guru</div>Jupiter exalted in Cancer in the 8th house represents the <em>inner guru</em> operating through hidden wisdom and transformative experience. Your deepest spiritual insights come not from books or teachers but from <strong>life's crises and turning points</strong>. Every major difficulty in your life carries a hidden teaching — this is the 8th house Jupiter signature. The spiritual path for this chart is experiential and transformative, not intellectual.</div>
+  <div class="info-card accent-amber"><div class="info-card-title">Recommended Spiritual Practices</div><strong>Primary:</strong> Worship of Indra-Agni through fire-related practices — Agni Hotra, Havan, or simply a daily lamp (deepa) lit with intention. Thursday worship of Jupiter (Brihaspati) as Lagna lord is the most natural practice.<br><br><strong>Mantra:</strong> Jyeshtha natives benefit from the Maha Mrityunjaya Mantra (Saturn/Scorpio/Vrischika energy), Guru Mantra on Thursdays, and daily Shiva worship. The Hanuman Chalisa is also protective given the Mars-ruled Moon sign.<br><br><strong>Fasting:</strong> Thursday fasts for Jupiter (Lagna lord), Friday observance for Venus (Atmakaraka), and occasional Saturn (Saturday) fasts for the 12th house Saturn pacification.<br><br><strong>Practice:</strong> Given the Rakshasa Gana, conventional group worship may feel hollow. Solo practice, intense meditation, martial arts, or service-based spirituality (volunteering, mentoring, protection of others) are the most authentic pathways for this nakshatra.</div>
+</div>
+
+<!-- PANEL: DASHA -->
+<div id="panel-dasha" class="panel">
+  <div class="sec-title">Vimshottari Dasha Sequence</div>
+  <div class="dasha-list">
+    <div class="dasha-item"><span class="dasha-planet">Budha (Mercury)</span><span style="color:var(--text-dim);font-size:13px;">Mahadasha · 17 years</span><span class="dasha-period">1989 – 2006</span></div>
+    <div class="dasha-item"><span class="dasha-planet">Ketu</span><span style="color:var(--text-dim);font-size:13px;">Mahadasha · 7 years</span><span class="dasha-period">2006 – 2013</span></div>
+    <div class="dasha-item current"><span class="dasha-planet">Shukra (Venus) ← Now</span><span class="badge b-teal">Active</span><span class="dasha-period">2013 – 2033</span></div>
+    <div class="dasha-item"><span class="dasha-planet">Surya (Sun)</span><span style="color:var(--text-dim);font-size:13px;">Mahadasha · 6 years</span><span class="dasha-period">2033 – 2039</span></div>
+    <div class="dasha-item"><span class="dasha-planet">Chandra (Moon)</span><span style="color:var(--text-dim);font-size:13px;">Mahadasha · 10 years</span><span class="dasha-period">2039 – 2049</span></div>
+    <div class="dasha-item"><span class="dasha-planet">Mangal (Mars)</span><span style="color:var(--text-dim);font-size:13px;">Mahadasha · 7 years</span><span class="dasha-period">2049 – 2056</span></div>
+  </div>
+  <div class="sec-title">Antardasha Breakdown — Shukra Mahadasha (2013–2033)</div>
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);">
+    <table class="ad-table" style="min-width:520px;">
+      <thead><tr><th>Antardasha</th><th>Period</th><th>Dur.</th><th>Theme for This Chart</th></tr></thead>
+      <tbody>
+        <tr><td><span class="ad-lord">Shukra / Shukra</span></td><td class="ad-period">2013 – 2016</td><td class="ad-period">40 mo</td><td>Venus in own sign in 11th doubly activated. Prosperity, social expansion, relationships, artistic pursuits peak. Malavya Yoga fully expressed. Wealth foundations laid.</td></tr>
+        <tr><td><span class="ad-lord">Shukra / Surya</span></td><td class="ad-period">2016 – 2017</td><td class="ad-period">12 mo</td><td>Sun in 11th activated — authority, public recognition, leadership opportunities. Short but powerful phase of visibility.</td></tr>
+        <tr><td><span class="ad-lord">Shukra / Chandra</span></td><td class="ad-period">2017 – 2019</td><td class="ad-period">20 mo</td><td>Moon moves to 12th in this chart — emotional introspection, possible foreign connection, domestic changes. Spiritual and family themes.</td></tr>
+        <tr><td><span class="ad-lord">Shukra / Mangal</span></td><td class="ad-period">2019 – 2020</td><td class="ad-period">12 mo</td><td>Mars in 10th activated — career ambition and drive peaks. Competitive wins possible. Physical energy high. Watch for overexertion.</td></tr>
+        <tr><td><span class="ad-lord">Shukra / Rahu</span></td><td class="ad-period">2020 – 2023</td><td class="ad-period">36 mo</td><td>Rahu in 8th — intense transformation, hidden opportunities, unexpected events. The 2020–2023 period likely brought major life upheaval and restructuring.</td></tr>
+        <tr class="now"><td><span class="ad-lord">Shukra / Guru ← Now</span></td><td class="ad-period">2023 – 2026</td><td class="ad-period">32 mo</td><td><span class="badge b-teal" style="margin-right:4px;">Active</span>Jupiter (Lagna lord, exalted) antardasha within Venus MD — wisdom, expansion, recognition, and fortune converge. Highly auspicious. Career and relationship breakthroughs. Best sub-period of the decade.</td></tr>
+        <tr><td><span class="ad-lord">Shukra / Shani</span></td><td class="ad-period">2026 – 2029</td><td class="ad-period">38 mo</td><td>Saturn in 12th activated — disciplined effort behind the scenes. Hard work builds lasting foundation. Foreign work or relocation possible. Avoid overextension.</td></tr>
+        <tr><td><span class="ad-lord">Shukra / Budha</span></td><td class="ad-period">2029 – 2031</td><td class="ad-period">34 mo</td><td>Mercury rules 7th and 10th for Dhanu Lagna — career and partnership peak within Venus MD. Intellectual work gains recognition. Contracts and agreements highly favourable.</td></tr>
+        <tr><td><span class="ad-lord">Shukra / Ketu</span></td><td class="ad-period">2031 – 2033</td><td class="ad-period">14 mo</td><td>Ketu in 9th — spiritual seeking, detachment from material gains. Introspective closing phase of Shukra MD. Good for meditation, pilgrimage, and preparing for the next cycle.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- PANEL: NAVAMSA D9 -->
+<div id="panel-navamsa" class="panel">
+  <div class="sec-title">Navamsa (D9) Chart — Soul &amp; Marriage Quality</div>
+  <div class="info-card accent-teal"><div class="info-card-title">What the D9 Reveals</div>The Navamsa is the most important divisional chart after the Rashi (D1). It reveals the soul's deeper purpose, the true strength of planets (a weak planet in D1 may be strong in D9), and the spiritual quality of the marriage and partnerships. The D9 is considered the chart of the second half of life — its themes intensify progressively.</div>
+  <div class="sec-title">Navamsa Positions</div>
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:16px;">
+    <table class="nav-table" style="min-width:420px;">
+      <thead><tr><th>Graha</th><th>D1 Rashi</th><th>D9 Navamsa Sign</th><th>D9 Strength</th></tr></thead>
+      <tbody>
+        <tr><td style="color:var(--teal);font-weight:500;">Sun</td><td>Tula ~20°55'</td><td>Karka (Cancer)</td><td><span class="badge b-neutral">Friendly</span></td></tr>
+        <tr><td style="color:var(--teal);font-weight:500;">Moon</td><td>Vrischika ~14°20'</td><td>Mesha (Aries)</td><td><span class="badge b-good">Strong — exalted sign</span></td></tr>
+        <tr><td style="color:var(--teal);font-weight:500;">Mars</td><td>Kanya ~27°40'</td><td>Vrischika (Scorpio)</td><td><span class="badge b-good">Own sign — very strong</span></td></tr>
+        <tr><td style="color:var(--teal);font-weight:500;">Mercury</td><td>Tula ~14°20'</td><td>Vrishabha (Taurus)</td><td><span class="badge b-neutral">Friendly</span></td></tr>
+        <tr><td style="color:var(--teal);font-weight:500;">Jupiter</td><td>Karka ~17°10'</td><td>Meena (Pisces)</td><td><span class="badge b-teal">Own sign — extremely strong</span></td></tr>
+        <tr><td style="color:var(--teal);font-weight:500;">Venus</td><td>Tula ~28°50'</td><td>Mithuna (Gemini)</td><td><span class="badge b-neutral">Friendly</span></td></tr>
+        <tr><td style="color:var(--teal);font-weight:500;">Saturn</td><td>Vrischika ~24°05'</td><td>Kanya (Virgo)</td><td><span class="badge b-neutral">Friendly</span></td></tr>
+        <tr><td style="color:var(--teal);font-weight:500;">Rahu</td><td>Karka ~26°18'</td><td>Meena (Pisces)</td><td><span class="badge b-info">Spiritual placement</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="info-card accent-teal"><div class="info-card-title">Key D9 Revelation: Jupiter in Own Sign (Pisces)</div>Jupiter, already exalted in D1 (Cancer), moves to <strong>Meena (Pisces) in D9 — its own sign</strong>. This is extraordinary. Jupiter is powerful in both the surface chart AND the soul chart. This is the signature of someone whose wisdom, spiritual depth, and philosophical understanding only grow stronger with time and age. The second half of life becomes increasingly meaningful, purposeful, and spiritually rich.</div>
+  <div class="info-card accent-indigo"><div class="info-card-title">Mars in Own Sign (Scorpio) in D9</div>Mars moves to Vrischika (its own sign) in the D9 — significantly strengthening what appeared as a Virgo-placed Mars in D1. This confirms: the career drive, competitive instinct, and executive capacity are even stronger at the soul level than the birth chart suggests. In the second half of life, Mars-ruled qualities (leadership, decisiveness, physical vitality) deepen considerably.</div>
+  <div class="info-card accent-amber"><div class="info-card-title">Moon Neecha in D9 — Emotional Depth</div>Moon debilitated in Capricorn in D9 is the one shadow in an otherwise very strong D9 chart. This indicates a deep, sometimes hidden emotional life — difficulty expressing vulnerability, possible emotional suppression, or carrying burdens silently. This is not weakness; it is an invitation to develop emotional intelligence as a lifelong practice. The marriage and close relationships will be the primary space where this is invited to heal.</div>
+</div>
+
+<!-- PANEL: TRANSITS -->
+<div id="panel-transits" class="panel">
+  <div class="sec-title">Gochar (Transits) — 2026</div>
+  <div class="info-card accent-teal"><div class="info-card-title">Jupiter Transit (Guru Gochar) <span class="badge b-good">Highly Favourable</span></div>Jupiter is currently in Vrishabha (Taurus) — your 6th house from Lagna and <strong>4th house from Moon (Vrischika)</strong>. Jupiter in 6th from Lagna gives competitive advantage, health improvements, and ability to overcome obstacles. From Moon (8th), it activates hidden transformations and deep insights — expect significant internal shifts and hidden opportunities surfacing.<br><br><strong>Jupiter enters Mithuna (Gemini) in mid-2026</strong> — your 7th house from Lagna and 9th from Moon. Jupiter in 7th from Lagna directly activates partnerships and marriage. Jupiter in 9th from Moon is the classical fortune-activation transit. This is one of the most auspicious transits possible for marriage, partnership, and fortune in the second half of 2026.</div>
+  <div class="info-card accent-amber"><div class="info-card-title">Saturn Transit (Shani Gochar) <span class="badge b-warn">Attention Required</span></div>Saturn is currently transiting <strong>Kumbha (Aquarius)</strong> — your 3rd house from Lagna and 4th from Moon. Saturn in 3rd from Lagna is broadly supportive — 3rd house Saturn gives courage, effort, and persistence in professional and personal initiatives. From Moon (4th), Saturn can bring emotional heaviness and home/property matters to focus, overthinking, and some anxiety about decisions. This is temporary and manageable — structured routine and physical exercise are the best antidotes.<br><br>Watch the <strong>Saturn transit into Meena (Pisces) in 2027</strong> — it enters your 4th house from Lagna, which can bring home, family, or property-related matters into focus.</div>
+  <div class="info-card accent-indigo"><div class="info-card-title">Rahu / Ketu Transit <span class="badge b-info">Karmic Shift</span></div>Rahu currently in Meena (Pisces) — your 4th house from Lagna. Rahu in 4th can create restlessness at home, desire to move or change living situation, and unconventional domestic arrangements. Ketu in Kanya (Virgo) — your 10th house — can create detachment from current career role or a desire to change profession. Together, the Rahu-Ketu axis is pushing a home-career realignment in 2025–2026. This aligns with the Shukra/Guru peak antardasha — a powerful recalibration and realignment is underway in 2025–2026.</div>
+  <div class="info-card accent-teal"><div class="info-card-title">Most Important Transit of 2026</div><strong>Jupiter entering Mithuna (7th house from Lagna) in mid-2026</strong> is the single most significant transit event for this chart this year. Combined with the Shukra/Guru antardasha currently running (Venus rules the 11th cluster, Jupiter rules the Lagna), this is the most powerful marriage and partnership activation of the decade. For anyone considering marriage, commitment, or a major business partnership — mid to late 2026 is astronomically supported.</div>
+</div>
+
+<!-- PANEL: SADE SATI -->
+<div id="panel-sadesati" class="panel">
+  <div class="sec-title">Sade Sati Status</div>
+  <div class="ss-clear">
+    <div class="ss-icon">✅</div>
+    <div>
+      <div class="ss-title">Not in Sade Sati — Clear Phase</div>
+      <div class="ss-sub">Saturn in Kumbha (Aquarius) · Moon in Vrischika (Scorpio) · No Sade Sati active</div>
+    </div>
+  </div>
+  <div class="info-card accent-indigo"><div class="info-card-title">Sade Sati Explanation</div>Sade Sati is the 7.5-year period when Saturn transits the sign before your Moon, through your Moon sign, and the sign after. Your Moon is in <strong>Vrischika (Scorpio)</strong>. Sade Sati activates when Saturn enters Tula (Libra), passes through Vrischika, and exits Dhanu (Sagittarius).</div>
+  <div class="sec-title">Sade Sati Timeline</div>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-year muted">~1994–2000 · Previous Sade Sati</div><div class="tl-desc">Saturn transited Tula (1994), Vrischika (1997), Dhanu (2000). This fell within the Budha Mahadasha (1989–2006) — the early formative years. Childhood and early education were the primary arena of this Sade Sati.</div></div>
+    <div class="tl-item now"><div class="tl-year">Now (2026) · Clear runway</div><div class="tl-desc">Saturn is in Kumbha — 5th from Moon. No Sade Sati. You are in a clean, unobstructed phase. Combined with Shukra/Guru antardasha currently active, this is the most fortunate combination of transit and Dasha you have had in years.</div></div>
+    <div class="tl-item"><div class="tl-year" style="color:var(--amber);font-weight:600;">~2029–2037 · Next Sade Sati</div><div class="tl-desc">When Saturn enters Tula (~2029–2030), the next Sade Sati begins. This is just a few years away — prepare now. This is 9+ years away. Plan your finances, health, and relationships robustly between now and 2034 so this phase, when it arrives, is navigated from a position of strength.</div></div>
+  </div>
+  <div class="info-card accent-teal"><div class="info-card-title">Key Insight</div>You are in a <strong>post-Sade Sati recovery and growth phase</strong> that aligns perfectly with Shukra Mahadasha. The 2025–2030 window is the critical runway before the next Sade Sati. Shukra Mahadasha is fully active and Shukra/Guru antardasha (currently running) is the most auspicious sub-period. Use this time wisely to build what will sustain the 2030s.</div>
+</div>
+
+<!-- PANEL: REMEDIES -->
+<div id="panel-remedies" class="panel">
+  <div class="sec-title">Jyotish Remedies (Upaya)</div>
+  <div class="info-card" style="margin-bottom:16px;">Classical Hindu Jyotish prescribes remedies to strengthen weak planets and pacify afflicted ones. These are drawn from Brihat Parashara Hora Shastra, Lal Kitab, and Muhurta Chintamani traditions.</div>
+  <div class="remedy-list">
+    <div class="remedy-item"><div class="remedy-dot"><span>Ju</span></div><div class="remedy-body"><div class="remedy-title">Jupiter — Lagna Lord (Exalted)</div>Jupiter is your Lagna lord and exalted — maintain and strengthen this power. <strong>Thursday worship</strong> of Brihaspati with yellow flowers, chana dal, and turmeric. Recite <em>"Om Brim Brihaspataye Namah"</em> 108 times on Thursdays. Wear yellow or saffron on Thursdays. Serve teachers, Brahmins, and the elderly. <strong>Yellow Sapphire (Pukhraj)</strong> in gold on the index finger of the right hand is highly suitable for this chart — Jupiter is the Lagna lord and exalted. Verify with a Jyotishi before wearing.</div></div>
+    <div class="remedy-item"><div class="remedy-dot"><span>Ve</span></div><div class="remedy-body"><div class="remedy-title">Venus — Atmakaraka (Own Sign)</div>Venus in own sign in 11th is strong — strengthen as Atmakaraka (soul significator). <strong>Friday worship</strong> of Goddess Lakshmi. Recite <em>"Om Shum Shukraya Namah"</em> 108 times on Fridays. Wear white or cream on Fridays. Offer white flowers, white sweets, or silver to Lakshmi on Fridays. <strong>Diamond or White Sapphire</strong> in silver on the right ring finger can be considered given Venus's own-sign strength — use after 7-day trial.</div></div>
+    <div class="remedy-item"><div class="remedy-dot"><span>Sa</span></div><div class="remedy-body"><div class="remedy-title">Saturn — 12th House (Pacify)</div>Saturn in 12th needs pacification to reduce hidden stress and isolation. <strong>Saturday worship</strong> of Shani Deva with sesame oil lamp, black sesame, and iron. Recite <em>"Om Sham Shanaischaraya Namah"</em> 108 times on Saturdays. Donate black cloth, mustard oil, or food to those in need on Saturdays. Serve the underprivileged. Avoid ego and arrogance — Saturn in 12th punishes pride quietly but surely. <strong>Blue Sapphire (Neelam)</strong> is NOT recommended for this chart without extensive in-person Jyotish evaluation — Saturn rules the 2nd and 3rd houses and sits in the 12th.</div></div>
+    <div class="remedy-item"><div class="remedy-dot"><span>Me</span></div><div class="remedy-body"><div class="remedy-title">Mercury — Mahadasha Lord</div>Mercury as current Mahadasha lord deserves active strengthening. <strong>Wednesday worship</strong> — feed green grass to cows, offer green mung dal at Vishnu temples. Recite <em>"Om Bum Budhaya Namah"</em> 108 times on Wednesdays. Maintain absolute honesty in all communication — Mercury's power is directly tied to the integrity of speech in this chart. Keep learning actively — Mercury thrives on new knowledge. <strong>Emerald (Panna)</strong> in gold on the right little finger is suitable given Mercury rules 7th and 10th.</div></div>
+    <div class="remedy-item"><div class="remedy-dot"><span>Mo</span></div><div class="remedy-body"><div class="remedy-title">Moon — Janma Rashi Lord</div>Moon in Tula in 11th is well-placed — maintain it. <strong>Monday worship</strong> — offer white flowers and milk at Shiva temple. Recite Chandra Mantra on Mondays. Wear silver regularly. Consume milk and dairy foods. Honour the mother and maternal family. <strong>Pearl (Moti)</strong> in silver on the right little finger is appropriate given Moon's good placement in 11th.</div></div>
+    <div class="remedy-item"><div class="remedy-dot"><span>Vi</span></div><div class="remedy-body"><div class="remedy-title">General — Jyeshtha Nakshatra Practice</div>As a Jyeshtha Nakshatra native, the primary deity is <strong>Indra</strong>. Worship at Shiva temples is particularly beneficial — Indra and Shiva share the energy of cosmic sovereignty. Recite the Indra-related verses from the Rigveda or simply chant <em>"Om Indraya Namah"</em> daily. Jyeshtha natives benefit from acts of genuine service — helping those weaker than yourself activates Indra's protective energy in your life. Avoid pride and the impulse to dominate — this is Jyeshtha's core karmic lesson.</div></div>
+  </div>
+</div>
+
+<!-- PANEL: FINAL VERDICT -->
+<div id="panel-verdict" class="panel">
+  <div class="sec-title">Final Verdict — Complete Life Reading</div>
+  <div class="verdict-box">
+    <div class="verdict-title">Summary of the Chart</div>
+    <div class="verdict-item">
+      <div class="verdict-label">Overall Life Theme</div>
+      <div class="verdict-text">You are a <strong>purpose-driven transformer</strong> — someone who carries both philosophical depth (Dhanu Lagna, exalted Jupiter) and fierce ambition (Jyeshtha Nakshatra, Mars in 10th, Rakshasa Gana). Your life arc is not about quiet accumulation — it is about building something significant, earning genuine recognition, and transforming whatever environment you enter. The 4-planet cluster in the 11th house means your life's greatest gifts come through people — through networks, relationships, and social capital. You are designed to thrive in community and collaboration, not in isolation.</div>
+    </div>
+    <div class="verdict-item">
+      <div class="verdict-label">Greatest Strengths</div>
+      <div class="verdict-text">
+        <strong>1. Malavya Yoga</strong> — Venus in own sign in 11th is a prosperity and social eminence yoga active for life.<br>
+        <strong>2. Exalted Jupiter in 8th</strong> — hardships become launching pads. You are built for resilience and deep wisdom.<br>
+        <strong>3. Mars in 10th</strong> — career drive, competitive precision, and executive energy are native to you.<br>
+        <strong>4. Shukra Mahadasha (2013–2033)</strong> — a double Rajayoga Mahadasha activating both career and partnerships for 17 years.<br>
+        <strong>5. No Sade Sati + post-Shani MD</strong> — the 19-year karmic debt period is done. The next decade is the reward.
+      </div>
+    </div>
+    <div class="verdict-item">
+      <div class="verdict-label">Biggest Challenges</div>
+      <div class="verdict-text">
+        <strong>1. Saturn in 12th</strong> — hidden stress, isolation, and the tendency to carry burdens alone. Vulnerability is not weakness — it is the one skill this chart needs to develop.<br>
+        <strong>2. Moon Neecha in D9</strong> — emotional suppression and difficulty expressing inner life. Close relationships will invite and require emotional honesty.<br>
+        <strong>3. Sun Neecha in D1</strong> — confidence may have been tested externally; the inner authority needs conscious cultivation.<br>
+        <strong>4. Rahu in 8th</strong> — unpredictable transformations and sudden changes remain a thread throughout life. Financial and legal affairs must always be kept meticulously in order.
+      </div>
+    </div>
+    <div class="verdict-item">
+      <div class="verdict-label">The Single Most Important Action Right Now</div>
+      <div class="verdict-text"><strong>Step fully into the Shukra/Guru peak NOW.</strong> The Ketu Mahadasha (2006–2013) was a period of detachment and searching. Shukra Mahadasha opened in 2013 and has been building your social capital, relationships, and prosperity steadily. Right now — <strong>Shukra/Guru antardasha (2023–2026) — is the single most auspicious sub-period of the entire Shukra MD.</strong> Jupiter (your Lagna lord, exalted in Cancer) is operating within Venus Mahadasha. This is the cosmic green light. Whatever you want to build — career, business, relationships, wealth — the window is open right now. Do not wait.</div>
+    </div>
+  </div>
+
+  <div class="sec-title">Complete Chart Summary</div>
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--radius);">
+  <table class="sum-table" style="min-width:320px;">
+    <tr><td>Lagna (Ascendant)</td><td>Dhanu (Sagittarius) · Ruled by Jupiter</td></tr>
+    <tr><td>Moon Sign (Rashi)</td><td>Vrischika (Scorpio)</td></tr>
+    <tr><td>Sun Sign</td><td>Tula (Libra)</td></tr>
+    <tr><td>Janma Nakshatra</td><td>Jyeshtha Pada 1 · Indra Devata</td></tr>
+    <tr><td>Gana / Varna / Nadi</td><td>Rakshasa / Shudra / Antya</td></tr>
+    <tr><td>Strongest Planet</td><td>Jupiter — Exalted in Cancer (H8)</td></tr>
+    <tr><td>Key Yoga</td><td>Malavya Yoga (Venus own sign H11) — Pancha Mahapurusha</td></tr>
+    <tr><td>Current Mahadasha</td><td>Shukra (Venus) · 2013 – 2033</td></tr>
+    <tr><td>Current Antardasha</td><td>Shukra / Guru · 2023–2026 (prime)</td></tr>
+    <tr><td>Sade Sati</td><td>Not active · Next begins ~2029–2030</td></tr>
+    <tr><td>Marriage Window</td><td>Shukra MD / Guru AD · NOW 2023–2026 (prime)</td></tr>
+    <tr><td>Career Peak</td><td>2025–2033 (Guru + Shani + Budha ADs within Shukra MD)</td></tr>
+    <tr><td>Wealth Peak</td><td>2025–2033 (sustained accumulation through Shukra MD peak)</td></tr>
+    <tr><td>Primary Remedy</td><td>Jupiter (Thursday) + Venus (Friday) strengthening</td></tr>
+    <tr><td>Key Warning</td><td>Rahu in 8th — keep all financial and legal matters meticulously organised</td></tr>
+    <tr><td>Sources</td><td>Brihat Parashara Hora Shastra · Brihat Jataka · Saravali · Phaladeepika</td></tr>
+  </table>
+  </div>
+
+  <div class="footer">
+    <div class="footer-om">ॐ तत् सत्</div>
+    <div class="footer-note">
+      Computed using Lahiri (Chitrapaksha) Ayanamsha · Birth: 07/11/1989, 10:35 AM IST<br>
+      Karad, Maharashtra, India (17.26°N, 74.18°E)<br>
+      Reading prepared with reference to classical Jyotish texts. For gemstone remedies, consult a qualified Jyotishi in person.
+    </div>
+  </div>
+</div>
+
+</div><!-- /container -->
+<script>
+function show(id) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  var btn = event.currentTarget;
+  btn.classList.add('active');
+  // Scroll active tab into view on mobile
+  btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  // Scroll page to just below tabs
+  var tabsTop = document.querySelector('.tabs-wrap').offsetTop;
+  window.scrollTo({ top: tabsTop - 8, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
+    <div class="remedy-item"><div class="remedy-dot"><span>Sa</span></div><div class="remedy-body"><div class="remedy-title">Saturn — 12th House (Pacify)</div>Saturn in 12th needs pacification to red
